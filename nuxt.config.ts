@@ -31,9 +31,6 @@ export default defineNuxtConfig({
   ],
   vite: {
     mode: 'development',
-    server: {
-      cors: true, // Only for dev
-    },
     vue: {
       template: {
         transformAssetUrls,
@@ -42,6 +39,9 @@ export default defineNuxtConfig({
     build: {
       minify: false,
     },
+    // server: {
+    //   cors: true, // Only for dev
+    // },
   },
-  // sourcemap: true,
+  sourcemap: true,
 })
