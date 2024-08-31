@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     renderJsonPayloads: false,
     payloadExtraction: false,
     sharedPrerenderData: false,
+    componentIslands: true,
   },
 
   build: {
