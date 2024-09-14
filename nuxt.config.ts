@@ -12,10 +12,16 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
+  experimental: {
+    renderJsonPayloads: false,
+    payloadExtraction: false,
+    sharedPrerenderData: false,
+    componentIslands: true,
+  },
+
   build: {
     transpile: ['vuetify'],
   },
-
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
