@@ -17,7 +17,7 @@
 </script>
 <template>
   <div>
-    <span>Testing items: {{ products.length }}</span>
+    <span>Total items: {{ products.length }}</span>
   </div>
 </template>
 <style scoped></style>
