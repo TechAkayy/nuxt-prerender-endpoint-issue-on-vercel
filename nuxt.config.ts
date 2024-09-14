@@ -5,23 +5,17 @@ export default defineNuxtConfig({
   devtools: {enabled: true},
 
   nitro: {
-    preset: 'vercel-static',
+    preset: 'netlify-static',
   },
 
   future: {
     compatibilityVersion: 4,
   },
 
-  experimental: {
-    renderJsonPayloads: false,
-    payloadExtraction: true,
-    sharedPrerenderData: false,
-    componentIslands: true,
-  },
-
   build: {
     transpile: ['vuetify'],
   },
+
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
