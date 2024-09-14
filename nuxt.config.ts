@@ -12,13 +12,6 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  experimental: {
-    renderJsonPayloads: false,
-    payloadExtraction: true,
-    sharedPrerenderData: false,
-    componentIslands: true,
-  },
-
   build: {
     transpile: ['vuetify'],
   },
