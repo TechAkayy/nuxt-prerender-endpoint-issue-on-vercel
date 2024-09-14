@@ -1,11 +1,7 @@
 <script setup lang="ts">
   // const {data: jobs, error} = await useFetch('https://api.nuxt.com/jobs')
 
-  const {data, error} = await useFetch('/api/store', {
-    key: 'articles',
-    server: true,
-    responseType: 'json',
-  })
+  const {data, error} = await useFetch('/api/store')
 
   prerenderRoutes(`/api/store`)
 
@@ -21,7 +17,7 @@
 </script>
 <template>
   <div>
-    <span>Total items: {{ products.length }}</span>
+    <span>Total items: {{ products.length }}, removed useFetch params</span>
   </div>
 </template>
 <style scoped></style>
